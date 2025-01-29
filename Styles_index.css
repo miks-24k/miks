@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype'),
+         url('fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brittany';
+    src: url('fonts/Brittany/BrittanySignature.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Protest Revolution';
+    src: url('fonts/Protest_Revolution/ProtestRevolution-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('fonts/Anton/Anton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel Black';
+    src: url('fonts/CinzelDecorative-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-position: center;  
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 98%;
+    background-blend-mode: inherit;
+    color: black;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header nav .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header nav .logo-container img {
+    margin-right: 1rem; 
+}
+
+header nav .logo {
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-family: 'Protest Revolution', sans-serif;
+    margin-top: 0.5rem;
+}
+
+header nav .logo .la {
+    font-family: 'Brittany', sans-serif;
+}
+
+header nav .links {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+header nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: solid;
+    margin: 0 1rem;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+#hero {
+    background: url("pic/pool_upscayl_4x_upscayl-standard-4x.png");
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-size: cover;  
+    background-position: center center;  
+    padding-top: 5%;
+}
+
+
+#hero h1 {
+    font-size: 10rem;
+    font-family: 'Protest Revolution', sans-serif;
+    margin-bottom: 0.25rem;
+}
+
+
+#hero h1 .la {
+    font-family: 'Brittany', sans-serif;
+    font-style: normal; 
+}
+
+#hero p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    margin-top: -0.5rem;
+    font-size: large;
+}
+
+#about, #contact {
+    background-color: rgb(254, 226, 255);
+    margin: 7rem 7;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Anton', serif;
+}
+
+#contact p{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+#services {
+    background-color: #000000;
+    margin: 2rem 7;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Cinzel Black', sans-serif;
+    color: aliceblue;
+}
+
+#services .service-item {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Brittany', sans-serif;
+    font-size: 1.5rem;
+}
+
+#services img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    border: 5px solid rgb(182, 155, 212);
+}
+
+#services img:hover {
+    transform: scale(1.1);
+    border-color: rgb(238, 196, 255);
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-family: 'Anton', sans-serif;
+}
+
+.separators {
+    border-top: 2px solid #ffffff; 
+    margin: 50px 0px; 
+    
+}
+
+@media (max-width: 768px) {
+    header nav .logo-container {
+        display: flex;
+        flex-direction: row; 
+    }
+
+    header nav .links {
+        justify-content: flex-end;
+    }
+
+    .hero {
+        height: 50vh; 
+    }
+}
